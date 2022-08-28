@@ -1,27 +1,33 @@
-# SuperHero
+# Project: 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+SuperHero Application
 
-## Development server
+# Description: 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a NodeJs application and it provides few of the API's to get the SuperHero details and     also updating the details of superhero power stats.
 
-## Code scaffolding
+# Domain: 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+http://localhost:4201 (Local Running)
 
-## Build
+# Installation and Run the project: 
+        A) NPM install  (To install node modules)
+        B) node index.js (To run the project)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Project Usage:
+        After running the project, Need to make a API calls and it has to connect with MySQL database. Then by using POSTMAN tool we can test the API's. 
 
-## Running unit tests
+# Files Usage:
+        1) index.js (It has required packages and execution starts from this file).
+        2) routing.js (It has all the API's).
+        3) modals.js (It has a Application Logic and query's to execute )
+        4) db.js (It creates the connection between backend and database).
+        5) db.config.js (It has credentials of the database and database name).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# API's:
+        1) /superhero/:name (GET Method)
+        2) /editsuperhero (POST Method)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+        Here I am giviing some sample examples of API's
+        1) http://localhost:4201/superhero/oracle (GET)
+        2) http://localhost:4201/editsuperhero (POST)
